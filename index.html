@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinitha Saravanan | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #10101b;
+            color: white;
+        }
+
+        header {
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #181827;
+            position: sticky;
+            top: 0;
+        }
+
+        header h2 { color: #b69aff; }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 14px;
+        }
+
+        nav a:hover { color: #b69aff; }
+
+        section { padding: 90px 10%; }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 7vw, 68px);
+            margin: 20px 0;
+        }
+
+        .hero h1 span { color: #b69aff; }
+
+        .hero p {
+            color: #b9b9c8;
+            line-height: 1.8;
+            max-width: 600px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 28px;
+            padding: 13px 25px;
+            background: #a98af5;
+            color: #10101b;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+            width: fit-content;
+        }
+
+        h2.section-title {
+            color: #b69aff;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .about p, .contact p {
+            color: #c2c2cf;
+            line-height: 1.9;
+            max-width: 750px;
+        }
+
+        .skills, .projects, .achievements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1c1c2d;
+            padding: 25px;
+            border: 1px solid #343449;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: #a98af5;
+        }
+
+        .card h3 { margin-bottom: 12px; color: #c4adff; }
+
+        .card p {
+            color: #b9b9c8;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #181827;
+            color: #aaa;
+        }
+
+        @media(max-width: 600px) {
+            header { flex-direction: column; gap: 15px; }
+            nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+            nav a { margin: 0; }
+            section { padding: 65px 7%; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Vinitha.</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <p>HELLO, WELCOME TO MY PORTFOLIO</p>
+    <h1>I'm <span>Vinitha Saravanan</span></h1>
+    <h3>Information Technology Student</h3>
+    <p>
+        Passionate about technology, programming and problem solving.
+        I enjoy learning new skills and building meaningful solutions.
+    </p>
+    <a href="#about" class="btn">Explore More ↓</a>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+        I am Vinitha Saravanan, a B.Sc Information Technology student.
+        I am interested in programming, database management and
+        exploring new technologies. I believe in continuous learning
+        and improving my problem-solving skills.
+    </p>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills">
+        <div class="card"><h3>C Programming</h3><p>Programming fundamentals and logic building.</p></div>
+        <div class="card"><h3>Python</h3><p>Python programming and problem solving.</p></div>
+        <div class="card"><h3>SQL</h3><p>Database queries and data management.</p></div>
+        <div class="card"><h3>Power BI</h3><p>Data visualization and reporting.</p></div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Project 1</h3>
+            <p>Add your project title, description and technologies here.</p>
+        </div>
+        <div class="card">
+            <h3>Project 2</h3>
+            <p>Add another project and explain what you developed.</p>
+        </div>
+    </div>
+</section>
+
+<section id="achievements">
+    <h2 class="section-title">Achievements</h2>
+    <div class="achievements">
+        <div class="card"><h3>NPTEL IoT</h3><p>84% score</p></div>
+        <div class="card"><h3>NPTEL Java</h3><p>58% score</p></div>
+        <div class="card"><h3>Author</h3><p>Published Tamil story book – Viniyin Oru Dajan Kadhaigal.</p></div>
+        <div class="card"><h3>Typewriting</h3><p>First Class with Distinction.</p></div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p>I'm always happy to connect and explore new opportunities.</p>
+    <a href="mailto:your-email@example.com" class="btn">Send Email</a>
+</section>
+
+<footer>
+    <p>© 2026 Vinitha Saravanan | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
